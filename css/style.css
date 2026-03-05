@@ -26,7 +26,7 @@
   src: url("/assets/fonts/fira-sans-v18-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-@layer reset, base, utilities, components;
+@layer reset, base, layout, utilities;
 
 @layer reset {
   *,
@@ -207,6 +207,43 @@
   a:hover,
   a:focus-visible {
     color: var(--text-brand-light);
+  }
+}
+
+@layer layout {
+  .wrapper {
+    /* Locally scoped custom properties like this work well for
+     * declaring which values are acceptable to tweak. */
+    --wrapper-max-width: 1130px;
+    --wrapper-padding: 1rem;
+
+    max-width: var(--wrapper-max-width);
+    margin-inline: auto;
+    padding-inline: var(--wrapper-padding);
+    /* Helps to match the width of the Figma file */
+    box-sizing: content-box;
+
+    &[data-width="narrow"] {
+      --wrapper-max-width: 720px;
+    }
+
+    &[data-width="wide"] {
+      --wrapper-max-width: 1330px;
+    }
+  }
+
+  .section {
+    --section-padding: 3.75rem;
+
+    padding-block: var(--section-padding);
+
+    @media (width > 760px) {
+      --section-padding: 8rem;
+
+      &[data-padding="compact"] {
+        --section-padding: 4.5rem;
+      }
+    }
   }
 }
 
