@@ -212,7 +212,7 @@
 
 @layer layout {
   .wrapper {
-    /* Locally scoped custom properties like this work well for
+    /* Locally scoped custom properties like this work well for 
      * declaring which values are acceptable to tweak. */
     --wrapper-max-width: 1130px;
     --wrapper-padding: 1rem;
@@ -256,5 +256,92 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
+  }
+
+  /* Text color */
+  .text-main {
+    color: var(--text-main);
+  }
+  .text-high-contrast {
+    color: var(--text-high-contrast);
+  }
+  .text-brand {
+    color: var(--text-brand);
+  }
+  .text-brand-light {
+    color: var(--text-brand-light);
+  }
+
+  /* Background color */
+  .bg-accent-light {
+    background-color: var(--background-accent-light);
+  }
+  .bg-accent-main {
+    background-color: var(--background-accent-main);
+  }
+  .bg-accent-dark {
+    background-color: var(--background-accent-dark);
+  }
+  .bg-extra-light {
+    background-color: var(--background-extra-light);
+  }
+  .bg-light {
+    background-color: var(--background-light);
+  }
+  .bg-main {
+    background-color: var(--background-main);
+  }
+  .bg-dark {
+    background-color: var(--background-dark);
+  }
+  .bg-extra-dark {
+    background-color: var(--background-extra-dark);
+  }
+
+  /* Font family */
+  .ff-heading {
+    font-family: var(--ff-heading);
+  }
+  .ff-body {
+    font-family: var(--ff-body);
+  }
+
+  /* Font size — body scale */
+  .fs-sm {
+    font-size: var(--font-size-sm);
+  }
+  .fs-regular {
+    font-size: var(--font-size-regular);
+  }
+  .fs-md {
+    font-size: var(--font-size-md);
+  }
+  .fs-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Font size — heading scale */
+  .fs-heading-sm {
+    font-size: var(--font-size-heading-sm);
+  }
+  .fs-heading-regular {
+    font-size: var(--font-size-heading-regular);
+  }
+  .fs-heading-lg {
+    font-size: var(--font-size-heading-lg);
+  }
+  .fs-heading-xl {
+    font-size: var(--font-size-heading-xl);
+  }
+
+  /* Border radius */
+  .rounded-sm {
+    border-radius: var(--border-radius-sm);
+  }
+  .rounded-md {
+    border-radius: var(--border-radius-md);
+  }
+  .rounded-lg {
+    border-radius: var(--border-radius-lg);
   }
 }
