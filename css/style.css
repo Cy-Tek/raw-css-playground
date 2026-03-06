@@ -26,7 +26,7 @@
   src: url("/assets/fonts/fira-sans-v18-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-@layer reset, base, layout, utilities;
+@layer reset, base, layout, components, utilities;
 
 @layer reset {
   *,
