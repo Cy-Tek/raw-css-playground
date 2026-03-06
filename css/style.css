@@ -398,6 +398,16 @@
     width: 1px;
   }
 
+  /* Text display */
+  .text-centered {
+    text-align: center;
+  }
+
+  /* Section styles */
+  .section-title {
+    font-size: var(--font-size-heading-regular);
+  }
+
   /* Text color */
   .text-main {
     color: var(--text-main);
